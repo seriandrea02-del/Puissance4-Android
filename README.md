@@ -70,40 +70,26 @@ Voici la structure exacte des fichiers et dossiers que vous trouverez dans ce d�
 .
 ├── README.md                           # Documentation globale du projet
 ├── screenshots/                        # Captures d'écran d'illustration
-│   ├── image_22b0a1.png
-│   ├── image_22ace0.png
-│   ├── image_231d02.png
-│   └── image_206ee1.png
+│   ├── ia_intermediaire.png
+│   ├── mode_select.png
+│   ├── vic_jaune.png
+│   └── victoire_ia.png
 │
 ├── puissance4_lite/                    # PROJET 1 : Version sans IA (2 Joueurs)
-│   ├── build.gradle
-│   ├── settings.gradle
+│   ├── .idea/
+│   ├── gradle/
 │   └── app/
-│       └── src/
-│           └── main/
-│               ├── AndroidManifest.xml
-│               ├── java/
-│               │   └── com/example/puissance4_lite/
-│               │       └── MainActivity.java       # Logique de jeu (grille, gravité, victoires)
-│               └── res/
-│                   ├── layout/
-│                   │   └── activity_main.xml       # UI (GridLayout 6x7 + boutons)
-│                   └── drawable/                   # Assets (pions jaunes, rouges, cases vides)
-│
+│       └── src/                 
+│       ├── .gitignore
+│       └── buil.gradle.kts
 └── puissance4_ia/                      # PROJET 2 : Version avec IA
-    ├── build.gradle
-    ├── settings.gradle
+    ├── .idea/
+    ├── gradle/
     └── app/
         └── src/
-            └── main/
-                ├── AndroidManifest.xml
-                ├── java/
-                │   └── com/example/puissance4_ia/
-                │       └── MainActivity.java       # Logique du jeu + Algorithmes IA (Minimax, Bloqueur)
-                └── res/
-                    ├── layout/
-                    │   └── activity_main.xml       # UI avec Spinner de niveau d'IA
-                    └── drawable/
+        ├── .gitignore
+        └── buil.gradle.kts
+            
 ```
 
 ---
