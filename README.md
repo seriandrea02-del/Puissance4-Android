@@ -57,7 +57,7 @@ L'interface intègre un menu déroulant (`Spinner`) permettant de basculer insta
 
 ### Captures d'Écran — Projet IA
 
-![Partie avec IA](screenshots/image_231d02.png)
+![Partie avec IA](screenshots/victoire_ia.png)
 *Affichage du menu déroulant et partie en cours contre l'Intelligence Artificielle.*
 
 ---
