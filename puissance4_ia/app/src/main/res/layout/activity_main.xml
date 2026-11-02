@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        tools:context=".MainActivity">
+
+        <!-- Titre du jeu -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10sp"
+            android:text="PUISSANCE 4"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!-- Sélecteur de mode de jeu -->
+        <Spinner
+            android:id="@+id/spinnerMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center" />
+
+        <!-- Ligne des boutons du haut pour choisir la colonne -->
+        <LinearLayout
+            android:id="@+id/ajouter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15sp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="AjouterJeton"
+                app:srcCompat="@drawable/addjetonjaune" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="AjouterJeton"
+                app:srcCompat="@drawable/addjetonjaune" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="AjouterJeton"
+                app:srcCompat="@drawable/addjetonjaune" />
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="AjouterJeton"
+                app:srcCompat="@drawable/addjetonjaune" />
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="AjouterJeton"
+                app:srcCompat="@drawable/addjetonjaune" />
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="AjouterJeton"
+                app:srcCompat="@drawable/addjetonjaune" />
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="AjouterJeton"
+                app:srcCompat="@drawable/addjetonjaune" />
+
+        </LinearLayout>
+
+        <!-- Grille de jeu (6 lignes x 7 colonnes = 42 boutons) -->
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/grille"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20sp"
+            app:columnCount="7"
+            app:rowCount="6">
+
+            <ImageButton android:id="@+id/imageButton8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+            <ImageButton android:id="@+id/imageButton9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+            <ImageButton android:id="@+id/imageButton10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+            <ImageButton android:id="@+id/imageButton11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+            <ImageButton android:id="@+id/imageButton12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+            <ImageButton android:id="@+id/imageButton13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+            <ImageButton android:id="@+id/imageButton14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+
+            <ImageButton android:id="@+id/imageButton16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+            <ImageButton android:id="@+id/imageButton17" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+            <ImageButton android:id="@+id/imageButton18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+            <ImageButton android:id="@+id/imageButton19" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+            <ImageButton android:id="@+id/imageButton20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+            <ImageButton android:id="@+id/imageButton21" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+            <ImageButton android:id="@+id/imageButton22" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+
+            <ImageButton android:id="@+id/imageButton23" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+            <ImageButton android:id="@+id/imageButton24" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+            <ImageButton android:id="@+id/imageButton25" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+            <ImageButton android:id="@+id/imageButton26" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+            <ImageButton android:id="@+id/imageButton27" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+            <ImageButton android:id="@+id/imageButton28" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+            <ImageButton android:id="@+id/imageButton29" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+
+            <ImageButton android:id="@+id/imageButton30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+            <ImageButton android:id="@+id/imageButton31" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+            <ImageButton android:id="@+id/imageButton32" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+            <ImageButton android:id="@+id/imageButton33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+            <ImageButton android:id="@+id/imageButton34" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+            <ImageButton android:id="@+id/imageButton35" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+            <ImageButton android:id="@+id/imageButton36" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+
+            <ImageButton android:id="@+id/imageButton37" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+            <ImageButton android:id="@+id/imageButton38" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+            <ImageButton android:id="@+id/imageButton39" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+            <ImageButton android:id="@+id/imageButton40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+            <ImageButton android:id="@+id/imageButton41" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+            <ImageButton android:id="@+id/imageButton42" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+            <ImageButton android:id="@+id/imageButton43" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+
+            <ImageButton android:id="@+id/imageButton44" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+            <ImageButton android:id="@+id/imageButton45" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+            <ImageButton android:id="@+id/imageButton46" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+            <ImageButton android:id="@+id/imageButton47" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+            <ImageButton android:id="@+id/imageButton48" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+            <ImageButton android:id="@+id/imageButton49" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+            <ImageButton android:id="@+id/imageButton50" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" app:srcCompat="@drawable/p24blanc" />
+        </androidx.gridlayout.widget.GridLayout>
+
+        <!-- Message de statut dynamique -->
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20sp"
+            android:text="AU JOUEUR JAUNE DE JOUER"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- Bouton de réinitialisation -->
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20sp"
+            android:onClick="init"
+            android:text="Réinitialiser le jeu"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</ScrollView>
